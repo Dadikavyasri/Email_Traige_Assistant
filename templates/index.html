@@ -16,17 +16,20 @@
     </form>
 
     {% if category %}
-    <div class="result-box">
-        <h3>📂 Category: {{ category }}</h3>
-        <h3>😊 Sentiment: {{ sentiment }}</h3>
-        <h3>⚡ Priority: {{ priority }}</h3>
+<div class="result-box">
+    <h3>📂 Category: {{ category }}</h3>
+    <h3>😊 Sentiment: {{ sentiment }}</h3>
+    <h3>⚡ Priority: {{ priority }}</h3>
 
-        <div class="reply-box">
-            <h4>💬 Suggested Reply:</h4>
-            <p>{{ reply }}</p>
-        </div>
+    <h4>📝 Thread Summary:</h4>
+    <p>{{ summary }}</p>
+
+    <div class="reply-box">
+        <h4>💬 Suggested Reply:</h4>
+        <p>{{ reply }}</p>
     </div>
-    {% endif %}
+</div>
+{% endif %}
 </div>
 
 </body>
