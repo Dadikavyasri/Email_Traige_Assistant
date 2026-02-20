@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartMail AI - Email Triage Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>📧 SmartMail AI</h1>
+    <p class="subtitle">Intelligent Email Triage System</p>
+
+    <form method="POST">
+        <textarea name="email" placeholder="Paste your email here..." required></textarea>
+        <button type="submit">Analyze Email</button>
+    </form>
+
+    {% if category %}
+    <div class="result-box">
+        <h3>📂 Category: {{ category }}</h3>
+        <h3>😊 Sentiment: {{ sentiment }}</h3>
+        <h3>⚡ Priority: {{ priority }}</h3>
+
+        <div class="reply-box">
+            <h4>💬 Suggested Reply:</h4>
+            <p>{{ reply }}</p>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
