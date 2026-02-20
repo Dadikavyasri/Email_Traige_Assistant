@@ -38,8 +38,3 @@ The system analyzes subject and content.
 Predefined rules determine the appropriate category.
 Priority is assigned based on keywords or logic.
 Organized output is displayed to the user.
-
-
-✨ Add professional badges & formatting
-
-Cheppu next level ki teesukeldham 💪
